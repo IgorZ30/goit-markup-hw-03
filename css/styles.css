@@ -48,7 +48,6 @@ a {
     line-height: 120%;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 8px;
 }
 main{
   font-family: "Roboto", sans-serif;
@@ -60,7 +59,8 @@ main{
 }
 /* #region Хедер */
 .header{
-    padding:24 0 ;  
+    padding:24 0 ;
+    border-bottom: 1px solid #e7e9fc
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -82,6 +82,9 @@ main{
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
+}
+.header-navigation{
+  display: flex;
 }
 .header-container{
     display: flex;
@@ -132,13 +135,16 @@ main{
 }
 /* #endregion */
 /* #region introduction */
+.introduction{
+  padding: 188px 0;
+}
 .introduction-title {
   font-size: 56px;
   line-height: 107%;
   letter-spacing: 0.02em;
   color: #fff;
   text-align: center;
-  width: 496px;
+  max-width: 496px;
   margin: 46px auto;
 }
 .introduction-button {
@@ -155,6 +161,9 @@ main{
   padding: 16px 32px;
 border-radius: 4px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+min-width: 169px;
+height: 56px;
+border: none;
 }
 .introduction-button:hover,
 .introduction-button:focus {
@@ -206,13 +215,16 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   display: flex;
   gap: 24px ;
 }
+.team-info{
+  padding-bottom: 32px;
+}
 .team-title {
   text-align: center;
   margin-bottom: 8px;
 }
 .team-text{
 text-align: center;
-margin-bottom: 32px;
+margin-bottom: 8px;
 }
 .team-item {
   border-radius: 0 0 4px 4px;
@@ -261,9 +273,13 @@ justify-content: center;
 /* #region footer */
 footer {
   background: #2e2f42;
+  padding-top: 100px;
+    padding-bottom: 100px;
 }
+
 .footer-logo{
 margin-bottom: 16px;
+display: inline-block;
 }
 .footer-logo-part {
   color: #f4f4fd;
@@ -281,4 +297,5 @@ margin-bottom: 16px;
   line-height: 111%;
   letter-spacing: 0.02em;
 }
+
 /* #endregion */
